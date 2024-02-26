@@ -1,0 +1,6 @@
+Class - Describes the structure
+object - a specific example of that structure (instance)
+instance - another name for object
+instantiating -  creating an object from a class
+data members - variables
+methods - functions

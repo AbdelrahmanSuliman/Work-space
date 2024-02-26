@@ -1,0 +1,4 @@
+int = a;
+int& b = a;
+
+b is now = whatever value is stored in a which is 5;

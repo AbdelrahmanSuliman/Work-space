@@ -1,0 +1,16 @@
+Fields = collumns
+Records = rows
+
+SELECT * = select all 
+
+SELECT DISTINCT row FROM table = selects all unique rows in a table
+
+SELECT * FROM table WHERE amount < 20 = Select all records from the table if they are less than 20
+
+AND OR NOT = conditional statements
+
+IS TRUE, IS FALSE = boolean and checks for condition
+
+IS NULL = is empty
+
+WHERE collumn IN = checks if items are in a collumn
