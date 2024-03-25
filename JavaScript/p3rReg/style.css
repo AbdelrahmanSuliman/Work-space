@@ -1,0 +1,31 @@
+@font-face { font-family: AktivGrotesk-Bold; src: url('AktivGrotesk-Bold.ttf'); }
+.inputcontainer
+{
+    text-align: center;
+    padding: 10px 20px;
+    
+}
+.pinput
+{
+    border: none; /* Remove default border */
+  outline: none; /* Remove default outline */
+  padding: 5px 10px; /* Add some padding */
+  border-radius: 5px; /* Add rounded corners */
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.2); /* Inner shadow effect */
+}
+.dropDown{
+    margin-top: 5px;
+}
+#dropdown
+{
+    text-align: center;
+}
+#submitButtonContainer{
+    text-align: center;
+    font-family: AktivGrotesk-Bold;
+}
+.labels
+{
+    font-family: AktivGrotesk-Bold;
+    font-size: 1.2em;
+}

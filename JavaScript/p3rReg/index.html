@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width = device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+<form action = "connect.php" method = "post">
+    <div id = "labelContainer">
+        <div id = "pnamecontainer" class = "inputcontainer">
+    <label id ="pnamelabel" class = "labels">Persona name</label><br>
+    <input type = "text" id = "pname" class = "pinput" name = "pname"><br>
+        </div>
+    <div class = "inputcontainer" id = "parcanacontainer">
+    <label id ="parcanalabel" class ="labels" >Persona arcana</label><br>
+    </div>
+    <div id = "dropdown" class = "dropDown">
+    <select id = "arcanaSelect" name = "parcana">
+        <option disabled selected value> select an arcana </option>
+        <option value = "fool">Fool</option>
+        <option value = "magician">Magician</option>
+        <option value = "priestess">Priestess</option>
+        <option value = "empress">Empress</option>
+        <option value = "emperor">Emperor</option>
+        <option value = "hierophant">Hierophant</option>
+        <option value = "lovers">Lovers</option>
+        <option value = "chariot">Chariot</option>
+        <option value = "justice">Justice</option>
+        <option value = "hermit">Hermit</option>
+        <option value = "strength">Strength</option>
+        <option value = "hangedMan">Hanged man</option>
+        <option value = "death">Death</option>
+        <option value = "temperance">Temperance</option>
+        <option value = "devil">Devil</option>
+        <option value = "tower">Tower</option>
+        <option value = "star">Star</option>
+        <option value = "moon">Moon</option>
+        <option value = "sun">Sun</option>
+        <option value = "judgement">Judgement</option>
+        <option value = "world">World</option>
+    </select>
+    </div>
+    <div id = "plevelcontainer" class = "inputcontainer">
+        <label id ="plevellabel" class = "labels">Persona level</label><br>
+        <input type="text" id = "plevel" class = "pinput" name = "plevel">
+    </div>
+    <div class="firstThreeDropdown">
+    <div id = "pinheritanceContainer" class = "inputcontainer" >
+        <label id ="pinheritlabel" class = "labels">Persona inheritance</label><br>
+        <select id="pinheritance" class = "dropDown" name = "pinheritance">
+            <option value = "all">All</option>
+            <option value="fire">Fire</option>
+            <option value="ice">Ice</option>
+            <option value="electricity">Electricity</option>
+            <option value="wind">Wind</option>
+            <option value="light">Light</option>
+            <option value="darkness">Darkness</option>
+            <option value="strike">Strike</option>
+            <option value="slash">Slash</option>
+            <option value="pierce">Pierce</option>
+        </select>
+    </div>
+    <div id = "preflectsContainer" class = "inputcontainer" >
+        <label id ="preflectslabel" class = "labels">Reflects</label><br>
+        <select id="preflects"  class = "dropDown" name = "preflects">
+            <option value = "all">All</option>
+            <option value = "none">None</option>
+            <option value="fire">Fire</option>
+            <option value="ice">Ice</option>
+            <option value="electricity">Electricity</option>
+            <option value="wind">Wind</option>
+            <option value="light">Light</option>
+            <option value="darkness">Darkness</option>
+            <option value="strike">Strike</option>
+            <option value="slash">Slash</option>
+            <option value="pierce">Pierce</option>
+        </select>
+    </div>
+    <div id = "pabsorbsContainer" class = "inputcontainer" >
+        <label id ="pabsorbslabel" class = "labels">Absorbs</label><br>
+        <select id="pabsorbs"  class = "dropDown" name = "pabsorbs">
+            <option value = "none">None</option>
+            <option value="fire">Fire</option>
+            <option value="ice">Ice</option>
+            <option value="electricity">Electricity</option>
+            <option value="wind">Wind</option>
+            <option value="light">Light</option>
+            <option value="darkness">Darkness</option>
+            <option value="strike">Strike</option>
+            <option value="slash">Slash</option>
+            <option value="pierce">Pierce</option>
+        </select>
+    </div>
+</div>
+    <div id = "pblocksContainer" class = "inputcontainer" >
+        <label id ="pblockslabel" class = "labels">Blocks</label><br>
+        <select id="pblocks" class = "dropDown" name = "pblocks">
+            <option value = "none">None</option>
+            <option value="fire">Fire</option>
+            <option value="ice">Ice</option>
+            <option value="electricity">Electricity</option>
+            <option value="wind">Wind</option>
+            <option value="light">Light</option>
+            <option value="darkness">Darkness</option>
+            <option value="strike">Strike</option>
+            <option value="slash">Slash</option>
+            <option value="pierce">Pierce</option>
+        </select>
+    </div>
+    <div id = "presistsContainer" class = "inputcontainer" >
+        <label id ="presistslabel" class = "labels">Resists</label><br>
+        <select id="presists" class = "dropDown" name = "presists">
+            <option value = "none">None</option>
+            <option value="fire">Fire</option>
+            <option value="ice">Ice</option>
+            <option value="electricity">Electricity</option>
+            <option value="wind">Wind</option>
+            <option value="light">Light</option>
+            <option value="darkness">Darkness</option>
+            <option value="strike">Strike</option>
+            <option value="slash">Slash</option>
+            <option value="pierce">Pierce</option>
+        </select>
+    </div>
+    <div id = "pweakContainer" class = "inputcontainer" >
+        <label id ="pblockslabel" class = "labels">Weak to</label><br>
+        <select id="pweak" class = "dropDown" name = "pweak">
+            <option value = "none">None</option>
+            <option value="fire">Fire</option>
+            <option value="ice">Ice</option>
+            <option value="electricity">Electricity</option>
+            <option value="wind">Wind</option>
+            <option value="light">Light</option>
+            <option value="darkness">Darkness</option>
+            <option value="strike">Strike</option>
+            <option value="slash">Slash</option>
+            <option value="pierce">Pierce</option>
+        </select>
+    </div>
+    <div id = "submitButtonContainer">
+    <button type="submit" id = "submitButton">Register</button>
+    </div>
+</form>
+    
+    
+</body>
+
+</html>

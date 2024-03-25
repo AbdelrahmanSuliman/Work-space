@@ -1,0 +1,247 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tablink,
+.subtablink {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  margin: 5px;
+  transition: background-color 0.3s;
+}
+
+.tablink:hover,
+.subtablink:hover {
+  background-color: #ddd;
+  font-weight: bold;
+}
+
+.tabcontent,
+.subtabcontent {
+  display: none;
+}
+
+.tabcontent button {
+  padding: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.tabcontent button:hover {
+  background-color: lightgray;
+  opacity: 0.8;
+  font-weight: bold;
+}
+
+.tabcontent button:active {
+  background-color: rgb(226, 226, 226);
+}
+
+#add-product-tab {
+  padding: 20px;
+}
+
+#add-product-tab input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#existing-products-tab {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-style: groove;
+  font-size: 20px;
+}
+
+#existing-products-tab img {
+  width: 100px;
+  height: 100px;
+  margin-left: 100px;
+}
+
+.product {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#purchasing-tab {
+  margin: 10px;
+}
+
+#purchasing-tab input,
+button {
+  margin: 10px;
+}
+
+#existing-products-tab button {
+  margin-left: 30px;
+}
+
+input {
+  color: rgba(0, 0, 0, 0.87);
+  border-bottom-color: rgba(0, 0, 0, 0.42);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.009375em;
+  text-decoration: inherit;
+  text-transform: inherit;
+  align-self: flex-end;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px 16px 6px;
+  transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  border-bottom: 1px solid;
+  border-radius: 4px 4px 0 0;
+  background: rgb(245, 245, 245);
+  height: 56px;
+}
+
+input:hover {
+  border-bottom-color: rgba(0, 0, 0, 0.87);
+  background: #ececec;
+}
+
+input:focus {
+  border-color: #6200ee;
+}
+
+#add-product-tab label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
+}
+
+thead,
+tfoot {
+  background-color: rgb(228 240 245);
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+
+td:last-of-type {
+  text-align: center;
+}
+
+tbody > tr:nth-of-type(even) {
+  background-color: rgb(237 238 242);
+}
+
+tfoot th {
+  text-align: right;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+
+#add-employee input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#add-employee h3 {
+  text-align: center;
+}
+
+.SignUp h1 {
+  text-align: center;
+  color: white;
+}
+
+.SignUp input {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.SignUp input {
+  width: auto;
+  box-shadow: 6px 6px 6px 6px;
+}
+
+#SignUpUsername,
+#SignUpEmail,
+#SignUpPassword,
+#SignUpButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#SignUpBody {
+  background-color: #6d6d6d;
+}
+
+#space {
+  height: 200px;
+}
+
+#SignUpButton {
+  margin-top: 10px;
+}

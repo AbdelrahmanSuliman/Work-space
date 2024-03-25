@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Point of Sale</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src = "https://cdn.jsdelivr.net/npm/jsbarcode@3.11.6/dist/JsBarcode.all.min.js"></script>
+    <script src="//unpkg.com/javascript-barcode-reader"></script>
+    <script src="https://cdn.jsdelivr.net/npm/quagga/dist/quagga.min.js"></script>
+
+<body>
+    <div class="tabs">
+        <button class="tablink" onclick="openTab('sales', this)">Sales</button>
+        <button class="tablink" onclick="openTab('product', this)">Product</button>
+        <button class="tablink" onclick="openTab('purchase', this)">Purchase</button>
+        <button class="tablink" onclick="openTab('employee', this)">Employee</button>
+    </div>
+    <div id="sales" class="tabcontent">
+        <!-- Content for Sales tab -->
+        <h2>Sales</h2>
+        <div class="subtabs">
+            <button class="subtablink" onclick="openSubTab('sales-tab1', this)">Tab 1</button>
+            <button class="subtablink" onclick="openSubTab('sales-tab2', this)">Tab 2</button>
+        </div>
+        <div id="sales-tab1" class="subtabcontent">
+            <!-- Content for Sales Tab 1 -->
+            <p>Sales Tab 1 content goes here.</p>
+        </div>
+        <div id="sales-tab2" class="subtabcontent">
+            <!-- Content for Sales Tab 2 -->
+            <p>Sales Tab 2 content goes here.</p>
+        </div>
+    </div>
+    <div id = "product" class="tabcontent">
+        <h2> Products </h2>
+        <div class = "subtabs">
+            <button class="subtablink" onclick="openSubTab('add-product-tab', this)"> Add Product </button>
+            <button class="subtablink" onclick="openSubTab('existing-products-tab', this)"> Products</button>
+        </div>
+        <div id = "add-product-tab" class="subtabcontent">
+            <form class = "productForm">
+                <input name = "productName" id ="productName" type="text" placeholder="Enter product name.." required>
+                <br>
+                <input name = "productPrice" id = "productPrice" type="number" step="any" min="0" placeholder="Enter product price.." required>
+                <br>
+                <input name = "productQuantity" id = "productQuantity" type="number" min="0" placeholder="Enter quantity in stock.." required>
+                <br>
+                <label for="productImageUpload"> Product Image: </label>
+                <input name = "productImageUpload" id = "productImageUpload" type="file" accept="image/*" required>
+                <br>
+                <button type="submit"> Add </button>
+            </form>
+        </div>
+        <div id="existing-products-tab" class="subtabcontent">
+            <p id="placeholder">No products yet.</p>
+        </div>        
+    </div>
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Edit Product</h2  >
+          <label for="editProductName">Product Name:</label>
+          <input type="text" id="editProductName">
+          <label for="editProductPrice" >Product Price:</label>
+          <input type="number" step = "any" id="editProductPrice">
+          <label for="editProductQuantity">Product Quantity:</label>
+          <input type="number" id="editProductQuantity">
+          <button id="saveChangesBtn">Save Changes</button>
+        </div>
+    </div>      
+    <div id = "purchase" class="tabcontent">
+        <h2> Purchases </h2>
+        <div class="subtabs"> 
+            <button class="subtablink" onclick="openSubTab('scanning-tab', this)"> Scan </button>
+            <button class="subtablink" onclick = "openSubTab('checkout-tab', this)"> Checkout </button>
+        </div>
+        <div id="scanning-tab" class="subtabcontent">
+            <h3> Scan barcode or input code </h3>
+
+            <input type="text" placeholder="productID">
+            <button type="button" id="scanButton"> add product </button>
+            <br>
+            <hr>
+            <div id = "fileBarcode">  
+                <input type="file" accept="image/*" id="imageInput">
+                <br>
+                <button id="scanButton" onclick="scanBarcodeFromImage()">Scan Barcode from Image</button>
+                <div id="output"></div>
+            </div>
+            <hr>
+
+            <button id="scanBarcodeButton" onclick="scanBarcode()">Scan Barcode</button>
+            <div id="scanOutput"></div>
+            <div id="scanner-container"></div>
+        </div>
+        <div id = "checkout-tab" class="subtabcontent">
+            <table id = "cartTable">
+                <thead>
+                    <tr>
+                        <th scope="col">Product Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Product ID</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id = "employee" class="tabcontent">
+        <h2> Employees </h2>
+        <div class="subtabs">
+            <button class="subtablink" onclick="openSubTab('add-employee', this)">Add Employee</button>
+            <button class="subtablink" onclick="openSubTab('manage-employees', this)">Manage Employees</button>
+        </div>
+        <div id = "add-employee" class="subtabcontent">
+            <h3> Create Employee Account</h3>
+            <form class="employeeForm">
+                <input name = "employeeUsername" id = "employeeUsername" type="text" placeholder="Username">
+                <input name = "employeePassword" id = "employeePassword" type="text" placeholder="Password">
+                <button type="submit"> Create Account</button>
+            </form>
+        </div>
+        <div id = "manage-employees" class="subtabcontent">
+            
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+</html>

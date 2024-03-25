@@ -1,0 +1,53 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-family: "Arial", sans-serif;
+}
+.radioButtons {
+  font-family: "Arial", sans-serif;
+}
+form {
+  background-color: bisque;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+#submit {
+  margin-top: 10px;
+}
+#celsiusToFarenheit {
+  margin-top: 10px;
+}
+#farenheitToCelsius {
+  margin-top: 10px;
+}
+/* Add some additional styling to make the form look more attractive */
+form input[type="text"],
+form input[type="number"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+form button {
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}

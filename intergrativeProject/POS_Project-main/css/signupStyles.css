@@ -1,0 +1,15 @@
+#SignUpText,
+#SignUpUsername,
+#SignUpPassword,
+#SignUpEmail,
+#SignUpButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+body {
+  padding-top: 100px;
+}
